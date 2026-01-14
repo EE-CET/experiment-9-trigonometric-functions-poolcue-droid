@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class Trigonometry {
 
@@ -11,11 +11,10 @@ public class Trigonometry {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner (System.in);
-
+        Scanner sc = new Scanner(System.in);
         double angle = sc.nextDouble();
 
-        System.out.println("Sine: "+ sine(angle));
-        System.out.println("Coine: "+ cosine(angle));
+        System.out.printf("Sine: %.1f%n", sine(angle));
+        System.out.printf("Cosine: %.1f%n", cosine(angle));
     }
 }
